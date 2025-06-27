@@ -58,7 +58,7 @@ The performance of the model was evaluated using:
  The final model was evaluated on a set of test images, where it successfully detected and  localized weeds. Bounding boxes closely aligned with ground truth, and the model performed well under varying  environmental conditions.
 
 
- ## 🔬 Model Performance Comparison
+## Model Performance Comparison
 
 Below is a comparison of the performance metrics for different model variations during training and testing:
 
@@ -70,4 +70,35 @@ Below is a comparison of the performance metrics for different model variations 
 | FixMatch                       | 0.8681        | 0.8010     | 0.8541    | 0.5392       | 0.5707      | 0.8332       | 0.6862               |
 | Mean Teacher (100 epochs)      | 0.8426        | 0.8596     | 0.8747    | 0.5755       | 0.6054      | 0.8510       | 0.7133               |
 | Mean Teacher (200 epochs)      | 0.9175        | 0.8505     | 0.9451    | 0.6956       | 0.7206      | 0.8827       | 0.7892               |
+
+## Conclusion:
+
+This weed detection model, which integrates supervised and semi-supervised learning techniques, proves effective for real-world agricultural use. It offers a robust solution for detecting and localizing weeds, ultimately supporting more precise and efficient crop management.
+
+---
+
+## Requirements:
+
+- Python 3.x  
+- PyTorch  
+- YOLOv8 or YOLO11m (Ultralytics)  
+- OpenCV  
+- CUDA (for GPU acceleration)
+
+---
+
+## Usage:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-repo/weed-detection.git
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Train the model
+python train.py --data dataset.yaml --epochs 50 --batch-size 16 --img-size 640
+
+# 4. Run inference on test images
+python infer.py --weights path/to/model.pt --source path/to/test/images
 
