@@ -11,9 +11,9 @@ The approach combines supervised learning using labeled data and semi-supervised
 
 # 1. Data Preprocessing & Augmentation:
 
-(a) **Rotation: 90°, 180°, and 270° to diversify weed orientations.
-(b) **Horizontal Flipping: To increase generalization.
-(c) Bounding Box Adjustments: After augmentations to maintain correct localization.
+(a) **Rotation:** 90°, 180°, and 270° to diversify weed orientations.
+(b) **Horizontal Flipping:** To increase generalization.
+(c) **Bounding Box Adjustments:** After augmentations to maintain correct localization.
 
 # 2. YOLO11m Training:
 
