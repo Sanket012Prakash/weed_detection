@@ -18,7 +18,7 @@ The approach combines supervised learning using labeled data and semi-supervised
 ### 2. YOLO11m Training:
 - *Training*: 50 epochs using labeled data with a batch size of 16, learning rate of 5e-5, and image size of 640x640.
 - *GPU Acceleration*: Using CUDA for faster training.
-- 
+
 ### 3. Semi-Supervised Learning:
 - *Consistency Regularization*: Applied weak and strong augmentations to ensure model stability.
 - *Pseudo Labeling*: Generated pseudo labels for unlabeled data based on high-confidence predictions.
